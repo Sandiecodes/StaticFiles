@@ -6,6 +6,7 @@ WORKDIR /code
 COPY *.json .
 COPY server.js .
 COPY pages/* pages
-RUN npm add express
-RUN npm add body-parser
+RUN npm install
+//RUN npm add express
+//RUN npm add body-parser
 CMD ["node", "server.js"]
