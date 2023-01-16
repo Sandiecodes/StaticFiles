@@ -1,0 +1,11 @@
+version: "3.9"
+services:
+ web:
+  build: .
+  container_name: node1
+  ports:
+   - "80:8080"
+  volumes:
+   - ./:/code
+  stdin_open: true
+  tty: true
